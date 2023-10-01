@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header>
+      <div class="name" >
+        <marquee behavior="scroll" direction="left" ><h1>Xí Ngầu Online</h1></marquee>
+      </div>
+    </header>
+    <!-- contain -->
+    <div class="contain">
+      <div class="logo">
+          <img src="pngtree-the-emblem-or-logo-of-the-casino-gambling-house-with-the-image_318512.jpg" alt="">
+      </div>
+      <div class="contact">
+        <ul>
+          <li>Giới thiệu</li>
+          <li>Liên hệ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="kq">
+      <p id="kq">Ai là người chiến thắng ?</p>
+    </div>
+    <div class="score">
+      <p class="player">Người chơi 1</p>
+      <p class="player">Người chơi 2</p>
+    </div>
+    <div class="img">
+      <img id="player1"  src="1.png" alt="">
+      <img id="player2"  src="1.png" alt="">
+    </div>
+    <di class="btn">
+      <button type="button" onclick=" return f1()">ROLL</button>
+    </di>
+  </div>
+</body>
+<script>
+  function f1(){
+    var player1 = document.getElementById("player1");
+    var player2 = document.getElementById("player2");
+    player1 =  Math.floor(Math.random()*6)+1;
+    player2 =  Math.floor(Math.random()*6)+1;
+// ảnh player 1
+    switch(player1) {
+  case 1:
+    document.getElementById("player1").src = "1.png"
+    break;
+  case 2:
+    document.getElementById("player1").src = "2.png"
+    break;
+  case 3:
+    document.getElementById("player1").src = "3.png"
+    break;
+  case 4:
+    document.getElementById("player1").src = "4.png"
+    break;
+  case 5:
+    document.getElementById("player1").src = "5.png"
+    break;
+  case 6:
+    document.getElementById("player1").src = "6.png"
+    break;
+}
+// ảnh player 2
+    switch(player2) {
+  case 1:
+    document.getElementById("player2").src = "1.png"
+    break;
+  case 2:
+    document.getElementById("player2").src = "2.png"
+    break;
+  case 3:
+    document.getElementById("player2").src = "3.png"
+    break;
+  case 4:
+    document.getElementById("player2").src = "4.png"
+    break;
+  case 5:
+    document.getElementById("player2").src = "5.png"
+    break;
+  case 6:
+    document.getElementById("player2").src = "6.png"
+    break;
+}
+// Kiểm tra coi ai thắng
+    if(player1 > player2){
+      document.getElementById("kq").innerHTML = "Người chơi 1 chiến thắng"
+    }else if(player1 == player2){
+      document.getElementById("kq").innerHTML = "Cả hai người chơi hòa nhau"
+    }else{
+      document.getElementById("kq").innerHTML = "Người chơi 2 chiến thắng"
+    }
+  }
+
+</script>
+</html>

@@ -1,0 +1,99 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.name{
+  color: aliceblue;
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact{
+  display: flex;
+
+}
+.contact ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.ul-li{
+  display: flex;
+}
+.contact ul li{
+  margin-right: 50px;
+  font-size: large;
+  border: solid;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact ul li:hover{
+  background-color: black;
+  color: aliceblue;
+}
+
+img{
+  max-width: 200px;
+}
+
+.kq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kq p{
+  font-size: xx-large;
+  padding: 25px;
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.img img{
+  max-width: 100%;
+  margin: 15px 60px;
+}
+
+
+.player{
+  margin: 0 50px;
+  padding: 20px;
+  font-size: large;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn button{
+  margin-top: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: brown;
+  border: brown;
+  border-radius: 10px;
+  color: aliceblue;
+}
